@@ -1,0 +1,40 @@
+
+*
+{margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    background-size :cover;
+    background-position: center;
+}
+.menu-bar{
+    background: #f77a0d;
+    text-align: left;
+
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:#fff;
+    
+
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-bar ul li :hover{
+    background: #e9a66c;
+    border-radius: 3px;
+}
+

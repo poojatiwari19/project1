@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+   <link rel="stylesheet" href="style.css">
+  <title>LOG IN</title>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form "  method="post" id="login">
+
+      <div class="row">
+        <div class="col-75" >
+          <h1 class="heding">LOGIN</h1>
+          <hr>
+        </div>
+        <div class="col-25" style="padding-left:130px">
+            <img style="" src="vendiman logo.png" alt="Avatar" class="">
+        </div>
+
+      </div>
+
+
+    <label for="uname">Email</label>
+      <input type="email" placeholder="Enter Username" name="uname" autocomplete="off">
+
+      <label for="psw">Password</label>
+      <input type="password" placeholder="Enter Password" name="psw" autocomplete="off">
+
+      <button type="submit" class="form_button">Login</button>
+
+      <div class="form_text">
+        <p>
+          <a href="#" class="from_link"> Forgot password? </a>
+        </p>
+      </div>
+      <div class="form_text">
+        <p>
+          <a id="linksignup" class="from_link" href="./">Don't have a account/ create a account</a>
+        </p>
+      </div>
+    </form>
+
+
+
+
+    <form class="form" id="signup" onsubmit="return validation()">
+        <div class="row" >
+          <div class="col-75">
+            <h1 class="heding">signup</h1>
+             <hr />
+          </div>
+          <div class="col-25" style="padding-left:130px">
+              <img  src="vendiman logo.png" alt="Avatar">
+          </div>
+        </div>
+
+        <label for="name" >NAME</label>
+        <input type="text" placeholder="First Name" autocomplete="off" id="user"/>
+        <samp id="username" class="text-danger font-weight-bold"></samp>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter Email" name="email" required autocomplete="off" id="email"/>
+        <samp id="emailid" class="text-danger font-weight-bold"></samp>
+
+
+        <label for="mobile number">Mobile number</label>
+        <input type="tel" placeholder="Enter the number" id="mob"/>
+        <samp id="mobile" class="text-danger font-weight-bold"></samp>
+
+
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" autocomplete="off" id="pas">
+        <samp id="password" class="text-danger font-weight-bold"></samp>
+
+
+        <label for="psw-repeat">Confrimed Password</label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" autocomplete="off" id="cpas">
+        <samp id="cpassword" class="text-danger font-weight-bold"></samp>
+
+        <hr>
+
+        <button type="submit" class="form_button">Sign Up</button>
+        <p class="form_text">
+          <a id="linklogin" class="from_link" href="./">Alreday have an account ? shin in</a>
+        </p>
+
+    </form>
+  </div>
+ 
+  <script type="text/javascript" src="main.js"></script>
+
+
+
+</body>
+
+</html>
